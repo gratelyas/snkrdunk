@@ -1,14 +1,18 @@
- <div class="post">
-  <%= link_to "投稿", "posts/new"%>
-</div>
- 
- <% @posts.each do |post| %>
-  <%= post.title %>
-  <br>
-  <%= post.subtitle %>
-  <br>
-  <%= post.content %>
-  <br>
-  <br>
+<%= render partial: 'header' %>
 
-  <% end %>
+<div class="post">
+<%= link_to "投稿", "posts/new"%>
+</div>
+
+<% @posts.each do |post| %>
+<%= link_to post.title, post_path(post.id) %>
+<br>
+<%= post.subtitle %>
+<br>
+<%= image_tag(post.image.to_s) %>
+<br>
+<%= post.content %>
+<br>
+<br>
+
+<% end %>
