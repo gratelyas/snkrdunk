@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Snkrdunk</title>
+    <title>スニーカーダンク</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__title">
+        <%= link_to "SNKRDUNK", root_path, class: "header__title--text" %>
+      </div>
+      <div class="header__right">
+        <%= link_to "ログイン", '#', class: "header__right--log" %>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
