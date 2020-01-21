@@ -1,6 +1,14 @@
+ <div class="post">
+  <%= link_to "投稿", "posts/new"%>
+</div>
+ 
  <% @posts.each do |post| %>
   <%= post.title %>
+  <br>
   <%= post.subtitle %>
+  <br>
   <%= post.content %>
+  <br>
+  <br>
 
   <% end %>
