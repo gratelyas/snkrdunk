@@ -1,0 +1,21 @@
+.content {
+  margin-top: 30px;
+  height: 1200px;
+  .wrap-1200 {
+    width: 1200px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    #content-main {
+      width: 830px;
+      height: auto;
+      float: left;
+        .title {
+          font-size: 1.6rem;
+          font-weight: bold;
+          color: #000;
+          line-height: 1.4;
+          margin: 0 0 5px 0;
+        }
+    }  
+  }
+}
