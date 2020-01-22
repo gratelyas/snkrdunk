@@ -7,5 +7,95 @@
     width: 1200px;
     box-sizing: border-box;
     margin: 0 auto;
+    .brand-model-list{
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #333;
+      padding: 0 0 5px 0;
+      .content-title{
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+      }
+      .clearfix{
+        min-height: 0px;
+        .brand-box {
+          width: 590px;
+          margin: 0 0 20px 0;
+          .left{
+            float: left;
+            .brand-name {
+              font-size: 1.2rem;
+              font-weight: bold;
+              margin: 0 0 10px 0;
+              a {
+                color: #fff;
+              }
+            }
+            ul {
+              display: flex;
+              margin-block-start: 1em;
+              margin-block-end: 1em;
+              margin-inline-start: 0px;
+              margin-inline-end: 0px;
+              padding-inline-start: 40px;
+            }
+            ul li {
+              list-style: none;
+              font-size: 1rem;
+              display: inline-block;
+              margin: 0 10px 0 0;
+              line-height: 1.5;
+            }
+          }
+          .right{
+            float: right;
+          }
+        }
+      }
+    }
+    .other-list {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #333;
+      padding: 30px 0 25px;
+      .content-title {
+        color: #fff;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+      }
+      ul {
+        display: flex;
+      }
+      li {
+        margin-left: 10px;
+      }
+    }
+    .sns-box {
+      text-align: center;
+      margin: 30px 0 20px 0;
+      li {
+        text-align: center;
+        display: inline-block;
+        margin: 0 2px;
+      }
+    }
+    .footer-logo {
+      display: block;
+      text-align: center;
+    }
+    .footer-description {
+      font-size: 0.7rem;
+      color: #fff;
+      text-align: center;
+      margin: 12px 0 20px;
+    }
+    .copy-text {
+      font-size: 0.6rem;
+      color: #999;
+      text-align: center;
+    }
   }
 }

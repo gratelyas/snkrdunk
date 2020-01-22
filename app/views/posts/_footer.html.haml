@@ -1,4 +1,49 @@
 .footer
   .wrap-1200
-    © SODA inc All Rights Reserved.
+    .brand-model-list
+      %p.content-title ブランド・モデル一覧
+      .clearfix
+        .brand-box.left
+          %h5.brand-name
+            ナイキ(NIKE)
+          %ul
+            %li
+              エアフォームポジット
+            %li
+              エアフットスケープ
+            %li
+              エアフォース
+        .brand-box.right
+          %h5.brand-name
+            エアジョーダン(AIR JORDAN)
+          %ul
+            %li
+              アカデミー
+            %li
+              エアジョーダン1
+            %li
+              エアジョーダン10
+    .other-list
+      %p.content-title スニーカーダンクについて
+      %ul
+        %li スニーカー鑑定
+        %li 偽造品撲滅への取り組み
+        %li 取引の流れ
+    %ul.sns-box
+      %li
+        = image_tag("https://snkrdunk.com/assets/img/common/global-footer/footer-icon-sns-line.png", width: "30px")
+      %li
+        = image_tag("https://snkrdunk.com/assets/img/common/global-footer/footer-icon-sns-twitter.png", width: "30px")
+      %li
+        = image_tag("footer-icon-sns-instagram.png", width: "30px")
+      %li
+        = image_tag("footer-icon-sns-facebook.png", width: "30px")
+    .footer-logo
+      = link_to root_path do
+        = image_tag("footer-logo-snkrdunk.png", width: "120px")
+        
+    %p.footer-description
+      「スニーカーダンク」ナイキやアディダスなど人気スニーカーの新作・販売情報サイト
+    %p.copy-text
+      © SODA inc All Rights Reserved.
 
