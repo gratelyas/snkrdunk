@@ -68,3 +68,7 @@ gem 'sprockets', '3.7.2'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+
+gem 'haml-rails'
+gem 'erb2haml'

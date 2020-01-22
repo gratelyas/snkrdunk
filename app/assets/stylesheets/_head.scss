@@ -1,4 +1,139 @@
-.header {
+.header{
+  display: block;
+}
+#header {
   width: 100%;
-  background-color: green;
+  background: #fff;
+  .header-first-wrapper{
+    width: 100%;
+    min-width: 1300px;
+    border-bottom: 1px solid #eee;
+    padding: 0 30px;
+    box-sizing: border-box;
+    height: 35px;
+    .description{
+      color: #999;
+      font-weight: normal;
+      font-size: 0.7rem;
+      float: left;
+      line-height: 35px;
+      width: 800px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      height: 35px;
+    }
+    .btn-box{
+      float: right;
+      line-height: 35px;
+      height: 35px;
+      overflow: hidden;
+      .registration-btn{
+        background: #ff4715;       
+        float: right;
+        a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.7rem;
+        } 
+      }
+      .login-btn{
+        border-left: 1px solid #eee;
+        color: #000;
+        float: left;
+        margin: 0 0 0 10px;
+        a{
+          color: #000;
+          text-decoration: none;
+          font-size: 0.7rem;
+        } 
+      }
+     }
+    .sns-box{
+      float: right;
+      .sns-btn{
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        display: block;
+        float: right;
+      }
+    }
+  }
+  .header-second-wrapper{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 0 30px;
+    box-sizing: border-box;
+    height: 65px;
+    min-width: 1300px;
+    #logo {
+      float: left;
+      display: block;
+      line-height: 60px;
+      position: relative;
+      z-index: 15;
+    }
+    .serch-box {
+      float: right;
+      position: relative;
+      z-index: 15;
+      width: 190px; height: 30px;
+      border: solid #000;
+      line-height: 65px;
+      margin-top: 15px;
+    }
+    .menu {
+      position: absolute;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: auto;
+      font-family: Roboto,YuGothic,sans-serif;
+      line-height: 65px;
+      z-index: 11;
+      li {
+        font-size: 1.5rem;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 12px;
+        .init-bottom {
+          color: #000;
+          text-decoration: none;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+.init-bottom2 {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  &::after {
+    content: ' ';
+    background-image: url(https://snkrdunk.com/assets/img/common/global-header/header-menu-arrow.png);
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    position: relative;
+    top: -2px;
+    left: 5px;
+  }
+}
+
+
+.btn {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 120px;
+  height: 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
