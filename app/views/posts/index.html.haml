@@ -1,0 +1,18 @@
+= render partial: 'header'
+
+- @posts.each do |post|
+  = link_to post.title, post_path(post.id)
+  %br/
+  = post.subtitle
+  %br/
+  = image_tag(post.image.to_s)
+  %br/
+  = post.content
+  %br/
+  %br/
+
+
+
+.post
+  = link_to "投稿", "posts/new"
+= render partial: 'footer'

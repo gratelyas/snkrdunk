@@ -1,0 +1,44 @@
+%body
+  %header#header
+    .header-first-wrapper
+      .description ナイキやアディダスなどスニーカーの人気・新作情報サイト「スニーカーダンク」
+      .btn-box
+        .btn.registration-btn
+          = link_to "会員登録(無料)", '#'
+        .btn.login-btn
+          = link_to "ログイン", '#'
+      .sns-box
+        .sns-btn
+          = link_to 'https://www.facebook.com/snkrdunk/', target: :_blank do
+            = image_tag("https://snkrdunk.com/assets/img/common/global-header/header-icon-sns-facebook.png", width: "30px")
+        .sns-btn
+          = link_to 'https://www.instagram.com/snkrdunk/', target: :_blank do
+            = image_tag("https://snkrdunk.com/assets/img/common/global-header/header-icon-sns-instagram.png", width: "30px")
+        .sns-btn
+          = link_to 'https://twitter.com/snkrdunk', target: :_blank do
+            = image_tag("https://snkrdunk.com/assets/img/common/global-header/header-icon-sns-twitter.png", width: "30px")
+        .sns-btn
+          = link_to 'https://line.me/R/ti/p/%40gya6708a', target: :_blank do
+            = image_tag("https://snkrdunk.com/assets/img/common/global-header/header-icon-sns-line.png", width: "30px")
+    .header-second-wrapper
+      .opacity-link#logo
+        = link_to root_path do
+          = image_tag("https://snkrdunk.com/assets/img/common/global-header/header-logo-snkrdunk.png", width: "180px")
+      .serch-box
+      %ul.menu
+        %li
+          = link_to "1月発売カレンダー", "#" , class: 'init-bottom'
+        %li
+          = link_to "NIKE", "#", class: 'init-bottom'
+        %li
+          = link_to "AIR JORDAN", "#", class: 'init-bottom'
+        %li
+          = link_to "ADIDAS", "#", class: 'init-bottom'
+        %li
+          = link_to "YEEZY", "#", class: 'init-bottom'
+        %li
+          = link_to "OFF-WHITE", "#", class: 'init-bottom'
+        %li
+          = link_to "OTHER-BRANDS", "#", class: 'init-bottom2'
+
+          
