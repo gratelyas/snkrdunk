@@ -4,17 +4,31 @@
       .comment-list
         %h2.title みんなの投稿
         .tag-wrapper ここはみんなの投稿がSNS風になる部分
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
+        %br
       .post-list-wrapper
         %h2.title 新着スニーカー・記事  
         .post-squares
-          -# - @posts.each do |post|
-          .post-list
-          .post-list
-          .post-list
-          .post-list
-          .post-list
-          .post-list
-          .post-list
+          - @posts.each do |post|
+            .post-list
+              = image_tag(post.image.to_s)
+              %h3.post-title
+                = link_to post.title, post_path(post.id)
+              %p.post-subtitle
+                = post.subtitle
+          
     .content-side サイドバーのコンテンツ
       
 
