@@ -1,21 +1,58 @@
 .content {
   margin-top: 30px;
-  height: 1200px;
+  height: 2000px;
   .wrap-1200 {
     width: 1200px;
+    height: 2000px;
     box-sizing: border-box;
     margin: 0 auto;
-    #content-main {
+    .content-main {
       width: 830px;
-      height: auto;
+      height: 2000px;
       float: left;
+      .comment-list{
         .title {
-          font-size: 1.6rem;
+          font-size: 1.0rem;
           font-weight: bold;
           color: #000;
           line-height: 1.4;
           margin: 0 0 5px 0;
         }
-    }  
+        .tag-wrapper {
+          border-bottom: 1px solid #333;
+        }
+      }
+      .post-list-wrapper {
+        width: 100%;
+        .title {
+          font-size: 1.0rem;
+          font-weight: bold;
+          color: #000;
+          line-height: 1.4;
+          margin: 0 0 16px 0;
+          border-top: 3px solid #000;
+          padding: 30px 0 0 0;
+        }
+        .post-squares{
+          width: 800px;
+          height: 900px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-auto-rows: 285px;
+          .post-list {
+            width: 250px;
+            height: 285px;
+            float: left;
+            margin: 0 0 40px 19px;
+            position: relative;
+          }
+        }
+      }
+    } 
+    .content-side {
+      width: 340px;
+      height: 2000;
+      float: right;
+    } 
   }
 }
