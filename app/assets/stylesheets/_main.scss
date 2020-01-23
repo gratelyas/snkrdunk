@@ -47,7 +47,7 @@
             position: relative;
           }
           .post-title {
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             font-weight: bold;
             display: -webkit-box;
             -webkit-box-orient: vertical;
@@ -56,6 +56,21 @@
             line-height: 1.4;
             margin: 15px 0 0 0;
             max-height: 38px;
+            a {
+              color: #000;
+              text-decoration: none;
+            }
+          }
+          .post-subtitle {
+            font-size: 0.6rem;
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            margin: 7px 0 0 0;
+            height: 44px;
+            color: #666666;
           }
         }
       }
