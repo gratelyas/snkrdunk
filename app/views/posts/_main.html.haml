@@ -5,10 +5,16 @@
         %h2.title みんなの投稿
         .tag-wrapper ここはみんなの投稿がSNS風になる部分
       .post-list-wrapper
-        %h2.title 新着スニーカー・記事
-        .post-list.first
-        .post-list
-        .post-list
+        %h2.title 新着スニーカー・記事  
+        .post-squares
+          -# - @posts.each do |post|
+          .post-list
+          .post-list
+          .post-list
+          .post-list
+          .post-list
+          .post-list
+          .post-list
     .content-side サイドバーのコンテンツ
       
 
