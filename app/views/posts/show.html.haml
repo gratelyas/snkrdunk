@@ -1,4 +1,12 @@
 = render partial: 'header'
+
+.breadcrumb
+  .wrap-1200
+    スニーカーダンク > エアジョーダン スニーカー > エアジョーダン1(AIR JORDAN 1) 
+.colum-1-header
+
+.content
+
 = @post.title
 = @post.subtitle
 = @post.updated_at
@@ -6,3 +14,5 @@
 = @post.content
 = link_to "編集", edit_post_path
 = link_to "削除", post_path, method: :delete
+
+= render partial: 'footer'
