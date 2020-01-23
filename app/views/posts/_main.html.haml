@@ -7,14 +7,12 @@
       .post-list-wrapper
         %h2.title 新着スニーカー・記事  
         .post-squares
-          -# - @posts.each do |post|
-          .post-list
-          .post-list
-          .post-list
-          .post-list
-          .post-list
-          .post-list
-          .post-list
+          - @posts.each do |post|
+            .post-list
+              = image_tag(post.image.to_s)
+              = link_to post.title, post_path(post.id)
+              = post.subtitle
+          
     .content-side サイドバーのコンテンツ
       
 
