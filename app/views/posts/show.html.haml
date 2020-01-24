@@ -1,8 +1,40 @@
 = render partial: 'header'
-= @post.title
-= @post.subtitle
-= @post.updated_at
-= image_tag(@post.image.to_s)
-= @post.content
+
+.breadcrumb
+  .wrap-1200
+    スニーカーダンク > エアジョーダン スニーカー > エアジョーダン1(AIR JORDAN 1) 
+.colum-1-header
+  .wrapp-1200
+    .page-header
+      .left-box
+        %h1.page-title
+          = @post.title
+        %p.sub
+          = @post.subtitle
+        %p.page-date
+          = @post.updated_at
+        %ul.sneaker-detail-text
+          %li 海外価格：$350
+          %li 発売：2020年
+          %li スニーカー型番：CT-6250
+      .right-box
+        %p.sns-title
+          発売前にTwitterでお知らせ！
+        %p.sns-detail
+          このスニーカーの追加情報や購入方法を発売前に公式Twitterでツイート中！
+        .follow-btn
+          %i.fa.fa-twitter 
+          @snkrdunkをフォロー
+
+.content-2
+
+  = @post.title
+  = @post.subtitle
+  = @post.updated_at
+  = image_tag(@post.image.to_s)
+  = @post.content
+
 = link_to "編集", edit_post_path
 = link_to "削除", post_path, method: :delete
+
+= render partial: 'footer'
