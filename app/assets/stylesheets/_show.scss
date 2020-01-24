@@ -64,9 +64,38 @@
         float: right;
         border-left: 1px solid #eee;
         padding: 0 0 0 20px;
+        .sns-title {
+          color: #1b95e0;
+          font-size: 0.9rem;
+          font-weight: bold;
+        }
+        .sns-detail {
+          color: #999;
+          font-size: 0.6rem;
+          line-height: 1.4;
+          margin: 10px 0 15px 0;
+        }
+        .follow-btn {
+          width: 198px;
+          height: 28px; 
+          background-color: #1b95e0;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 13px;
+          color: white;
+          line-height: 28px;
+        }
       }
     }
   }
 }
+
+.fa {
+  color: white;
+  margin: 0 5px 0 0;
+}
+
+
+// メインのコンテント部分
 
 
