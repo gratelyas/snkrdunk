@@ -27,12 +27,33 @@
           @snkrdunkをフォロー
 
 .content-2
+  .wrap-1200
+    .content-main
+      .post-wrapp
+        .image-wrap
+          = image_tag(@post.image.to_s)
+        .content-wrap
+          = @post.content
 
-  = @post.title
-  = @post.subtitle
-  = @post.updated_at
-  = image_tag(@post.image.to_s)
-  = @post.content
+      .comment-wrap
+        %h2.comment-title
+          コメント・レビュー
+        .post-list-colum
+          .post-post-box
+            ここに投稿の記述をかく！！
+          .post-list-box
+            みんなの投稿が出るようにする！
+          .post-list-box
+            みんなの投稿が出るようにする！
+          .post-list-box
+            みんなの投稿が出るようにする！
+      
+
+    .content-side
+      サイドのコンテンツを置きます。
+
+  
+  
 
 = link_to "編集", edit_post_path
 = link_to "削除", post_path, method: :delete
