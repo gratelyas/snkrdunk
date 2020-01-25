@@ -27,9 +27,14 @@
             %i.fa.fa-twitter 
             @snkrdunkをフォロー
 
+
 .content-2
   .wrap-1200
     .content-main
+      .adminpost
+        - if user_signed_in? && current_user.admin?
+          = link_to "編集", edit_post_path
+          = link_to "削除", post_path, method: :delete
       .post-wrapp
         .image-wrap
           = image_tag(@post.image.to_s)
@@ -56,7 +61,5 @@
   
   
 
-= link_to "編集", edit_post_path
-= link_to "削除", post_path, method: :delete
 
 = render partial: 'footer'
