@@ -1,7 +1,8 @@
 = render partial: 'header'
 
-.adminpost
-  = link_to "投稿", "posts/new"
+- if user_signed_in?
+  .adminpost
+    = link_to "投稿", "posts/new"
 
 
 = render partial: 'main'
