@@ -1,14 +1,14 @@
 .content {
   margin-top: 30px;
-  height: 2000px;
+  height: 1500px;
   .wrap-1200 {
     width: 1200px;
-    height: 2000px;
+    height: 1500px;
     box-sizing: border-box;
     margin: 0 auto;
     .content-main {
       width: 830px;
-      height: 2000px;
+      height: 1500px;
       float: left;
       .comment-list{
         .title {
@@ -80,5 +80,20 @@
       height: 2000;
       float: right;
     } 
+  }
+}
+
+
+.adminpost {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px 0 0 50px;
+  a {
+    color: white;
   }
 }
