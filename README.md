@@ -14,6 +14,7 @@
 |comment|string|
 ### Association
 - has_many :comments dependent: :destroy
+- belongs_to :user
 
 
 
@@ -27,6 +28,7 @@
 |size|integer|
 ### Association
 - has_many :comments dependent: :destroy
+- has_many :posts
 <!-- - has_many :likes dependent: :destroy -->
 
 
