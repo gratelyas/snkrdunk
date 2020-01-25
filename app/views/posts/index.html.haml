@@ -1,6 +1,6 @@
 = render partial: 'header'
 
-- if user_signed_in?
+- if user_signed_in? && current_user.admin?
   .adminpost
     = link_to "投稿", "posts/new"
 
