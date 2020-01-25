@@ -2,11 +2,17 @@
   %header#header
     .header-first-wrapper
       .description ナイキやアディダスなどスニーカーの人気・新作情報サイト「スニーカーダンク」
-      .btn-box
-        .btn.registration-btn
-          = link_to "会員登録(無料)", '#'
-        .btn.login-btn
-          = link_to "ログイン", '#'
+      - if user_signed_in?
+        .btn-box
+          マイページ
+          .btn.login-btn
+            = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        .btn-box
+          .btn.registration-btn
+            = link_to "会員登録(無料)", new_user_registration_path
+          .btn.login-btn
+            = link_to "ログイン", new_user_session_path
       .sns-box
         .sns-btn
           = link_to 'https://www.facebook.com/snkrdunk/', target: :_blank do
