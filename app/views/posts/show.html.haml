@@ -46,9 +46,15 @@
           コメント・レビュー
         .post-list-colum
           .post-post-box
-            ここに投稿の記述をかく！！
+            = form_with model: [@post,@comment], class: :form, local: true do |form|          
+              = form.file_field :image, class: :image__title
+              = form.text_field :text, placeholder: :本文, class: :form__text
+              = form.submit "投稿する"
           .post-list-box
-            みんなの投稿が出るようにする！
+            - @comments.each do |comment|
+              = comment.user.name
+              = comment.text
+              = image_tag(comment.image.to_s)
           .post-list-box
             みんなの投稿が出るようにする！
           .post-list-box
