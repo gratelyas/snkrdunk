@@ -206,11 +206,39 @@
             // text-align: center;
             .post-list-box {
               box-sizing: border-box;
-              height: 150px;
-              border-bottom: 1px solid #eee;
+              // height: 150px;
+              // border-bottom: 1px solid #eee;
               background: #fff;
               line-height: 150px;
               text-align: center;
+              &__inner {
+                display: block;
+                padding: 12px 15px;
+                height: 150px;
+                border-bottom: 1px solid #eee;
+                box-sizing: border-box;
+                color: #000;
+                background: #fff;
+                .user-box {
+                  height: 30px;
+                  line-height: 30px;
+                  box-sizing: border-box;
+                  display: table;
+                  table-layout: fixed;
+                  padding: 0;
+                }
+                .post-contents {
+                  height: 50px;
+                  line-height: 50px;
+                  padding: 10px 0 15px 0;
+                }
+                .post-data {
+
+                }
+                .post-action {
+
+                }
+              }
             }
           }
         }

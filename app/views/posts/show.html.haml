@@ -62,9 +62,14 @@
 
           .post-list
             - @comments.each do |comment|
-              .post-list-box              
-                = comment.user.name
-                = comment.text
+              .post-list-box   
+                .post-list-box__inner
+                  .user-box
+                    = comment.user.name
+                  .post-contents
+                    = comment.text
+                  .post-data
+                  .post-action
               -# = image_tag(comment.image.to_s)
           
            
