@@ -45,11 +45,12 @@
         %h2.comment-title
           コメント・レビュー
         .post-list-colum
-          .post-post-box
-            = form_with model: [@post,@comment], class: :form, local: true do |form|          
-              = form.file_field :image, class: :image__title
-              = form.text_field :text, placeholder: :本文, class: :form__text
-              = form.submit "投稿する"
+          - if user_signed_in?
+            .post-post-box
+              = form_with model: [@post,@comment], class: :form, local: true do |form|          
+                = form.file_field :image, class: :image__title
+                = form.text_field :text, placeholder: :本文, class: :form__text
+                = form.submit "投稿する"
           .post-list
             - @comments.each do |comment|
               .post-list-box              
