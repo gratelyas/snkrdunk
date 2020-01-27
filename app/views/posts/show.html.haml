@@ -47,10 +47,19 @@
         .post-list-colum
           - if user_signed_in?
             .post-post-box
-              = form_with model: [@post,@comment], class: :form, local: true do |form|          
-                = form.file_field :image, class: :image__title
-                = form.text_field :text, placeholder: :本文, class: :form__text
-                = form.submit "投稿する"
+              .entry-block
+                = form_with model: [@post,@comment], class: :POST, local: true do |form|
+                  %ul.post-content
+                    %li
+                      = form.text_field :text, placeholder: :欲しい！かっこいい！などお気軽にどうぞ！, class: :form__text  
+                    %li     
+                      %label 
+                        .test2
+                          = form.file_field :image
+                  .mt-10
+                    = form.submit "投稿する", class: :comment_btn
+                    
+
           .post-list
             - @comments.each do |comment|
               .post-list-box              
