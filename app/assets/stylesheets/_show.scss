@@ -152,13 +152,22 @@
             border-bottom: 1px solid #eee;
             background: #fff;
           }
-          .post-list-box {
+          .post-list {
             box-sizing: border-box;
-            height: 150px;
-            border-bottom: 1px solid #eee;
-            background: #fff;
-            line-height: 150px;
-            text-align: center;
+            height: 450px;
+            display: grid;
+            // border-bottom: 1px solid #eee;
+            // background: #fff;
+            // line-height: 150px;
+            // text-align: center;
+            .post-list-box {
+              box-sizing: border-box;
+              height: 150px;
+              border-bottom: 1px solid #eee;
+              background: #fff;
+              line-height: 150px;
+              text-align: center;
+            }
           }
         }
       }
