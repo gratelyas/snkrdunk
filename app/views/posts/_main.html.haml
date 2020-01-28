@@ -6,21 +6,16 @@
         .tag-wrapper
         .comment-box
           .comment-square
-            .comment-content
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
-        %br
+            - @comments.each do |comment|
+              .comment-content
+                .comment-image
+                  = image_tag(comment.image.to_s)
+                .comment-text
+                  = comment.text.truncate(15)
+                .comment-title
+                  = comment.post.title
+                
+        
       .post-list-wrapper
         %h2.title 新着スニーカー・記事  
         .post-squares
