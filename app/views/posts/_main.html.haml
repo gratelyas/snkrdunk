@@ -9,7 +9,7 @@
             - @comments.each do |comment|
               .comment-content
                 .comment-image
-                  = image_tag(comment.image.to_s)
+                  = link_to image_tag(comment.image.to_s)
                 .comment-text
                   = comment.text.truncate(15)
                 .comment-title
