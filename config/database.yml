@@ -47,8 +47,18 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+# production:
+  # <<: *default
+  # database: snkrdunk_production
+  # username: snkrdunk
+  # password: <%= ENV['91ac9e8f'] %>
+
+
+
 production:
   <<: *default
-  database: snkrdunk_production
-  username: snkrdunk
-  password: <%= ENV['SNKRDUNK_DATABASE_PASSWORD'] %>
+  url: <%= ENV['mysql2://bdc4043295e2d0:91ac9e8f@us-cdbr-iron-east-04.cleardb.net/'] %>
+  username: <%= ENV['bdc4043295e2d0'] %>
+  password: <%= ENV['91ac9e8f'] %>
+  master_key: <%= ENV['c945286bcfe2faf961914aa235da5d59'] %>
