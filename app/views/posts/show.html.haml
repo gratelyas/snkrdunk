@@ -61,13 +61,13 @@
                     
 
           .post-list
-            - @comments.each do |comment|
+            - @comments.first(2).each do |comment|
               .post-list-box   
                 .post-list-box__inner
                   .user-box
                     = comment.user.name
                   .post-contents
-                    = comment.text
+                    = link_to(comment.text, "/posts/#{@post.id}/comments/#{comment.id}")
                   .post-data
                   .post-action
               -# = image_tag(comment.image.to_s)
