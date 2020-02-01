@@ -9,11 +9,12 @@
             - @comments.each do |comment|
               .comment-content
                 .comment-image
-                  = link_to image_tag(comment.image.to_s), post_comment_path(comment.id,comment.post_id)
+                  = link_to image_tag(comment.image.to_s), post_comment_path(comment.post_id, comment.id)
                 .comment-text
                   = comment.text.truncate(15)
                 .comment-title
-                  = comment.post.title
+                  - @posts.first(1).each do |post|
+                    = link_to comment.post.title, post_path(post.id)
                 
         
       .post-list-wrapper

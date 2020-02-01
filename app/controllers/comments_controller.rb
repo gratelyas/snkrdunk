@@ -1,7 +1,10 @@
 class CommentsController < ApplicationController
   def create
     Comment.create(comment_params)
-    redirect_to root_path  #ここの記述は勉強し直し！
+    @posts = Post.all
+    @posts.first(1).each do |post|
+    redirect_to post_path(post.id)
+    end
   end
 
   def show
