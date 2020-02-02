@@ -61,7 +61,7 @@
                     
 
           .post-list
-            - @comments.first(2).each do |comment|
+            - @comments.order("created_at DESC").first(2).each do |comment|
               .post-list-box   
                 .post-list-box__inner
                   .user-box
