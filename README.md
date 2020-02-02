@@ -1,8 +1,6 @@
 # README
 
-<!-- DB設計 -->
-
-
+# DB設計
 <!-- postは運営が出品していく形になっている -->
 ## postテーブル
 |Column|Type|Options|
