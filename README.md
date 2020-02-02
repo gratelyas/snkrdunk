@@ -1,6 +1,6 @@
 <h1 align="center">README (SNKRDAUNK)</h1>
 
-目次
+<b>目次</b>
 <br>
 ・アプリの概要
 <br>
