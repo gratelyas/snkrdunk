@@ -28,14 +28,21 @@ URL: https://snkrdunk.herokuapp.com/
   <img width="600" alt="snkr3" src="https://user-images.githubusercontent.com/57933144/73604738-f1311680-45d8-11ea-8340-cfa3d39deeb4.png">
 
 </p>
+<br>
 
 ## このアプリの説明・使い方
 ![SNKRDUNK](https://i.gyazo.com/73d89f225551654128e9fdba83c0a158.gif)
 
 <br>
 ニッチな趣味を通した交流サイトを作りたいと思いました。私自身がスニーカーが好きでSNKRDUNKというアプリの利用者です。
+<br><br>
+このアプリは、スニーカーの発売情報やプレミア価格のついている商品について話し合うアプリです。
+<br><br>
+ログインしているユーザーのみがコメントをできるようになっています。
+<br><br>
+投稿に関しては、adminユーザーに権限を渡しています。
 <br>
-このアプリは、
+運営が投稿したものに対してみんなで話し合うアプリです。
 
 
 ## DB設計
