@@ -1,10 +1,10 @@
 <h1 align="center">README (SNKRDAUNK)</h1>
 
 <b>目次</b>
+<br><br>
+・アプリの概要
 <br>
 ・DB設計
-<br>
-・アプリの概要
 <br>
 ・作ろうと思ったきっかけ
 <br>
@@ -13,7 +13,7 @@
 ・今後追加する予定の機能
 <br>
 ・感想・まとめ
-<br>
+<br><br>
 URL: https://snkrdunk.herokuapp.com/
 <br>
 (herokuでデプロイ)
@@ -39,7 +39,7 @@ URL: https://snkrdunk.herokuapp.com/
 |image|string|null: false|
 |content|text|null: false|
 |comment|string|
-### Association
+#### Association
 - has_many :comments dependent: :destroy
 - belongs_to :user
 
