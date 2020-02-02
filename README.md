@@ -1,10 +1,12 @@
 <h1 align="center">README (SNKRDAUNK)</h1>
 
+<p align="center">
+
 URL: https://snkrdunk.herokuapp.com/
 <br><br>
 (herokuでデプロイ)
 
-<p align="center">
+
   <img width="600" alt="snkr1" src="https://user-images.githubusercontent.com/57933144/73604734-e1b1cd80-45d8-11ea-8b20-a413c5edb400.png">
 
 
@@ -12,7 +14,7 @@ URL: https://snkrdunk.herokuapp.com/
 
 
   <img width="600" alt="snkr3" src="https://user-images.githubusercontent.com/57933144/73604738-f1311680-45d8-11ea-8340-cfa3d39deeb4.png">
-</p>
+
 
 
 # DB設計
@@ -57,3 +59,4 @@ URL: https://snkrdunk.herokuapp.com/
 
 
 
+</p>
