@@ -1,7 +1,7 @@
-# README (SNKRDAUNK)
+<h1 align="center">README (SNKRDAUNK)</h1>
 
 URL: https://snkrdunk.herokuapp.com/
-<br>
+<br><br>
 (herokuでデプロイ)
 
 <p align="center">
