@@ -29,12 +29,16 @@ URL: https://snkrdunk.herokuapp.com/
 
 </p>
 
-<h2 align="center">このアプリの説明・使い方</h2>
+## このアプリの説明・使い方
 ![SNKRDUNK](https://i.gyazo.com/73d89f225551654128e9fdba83c0a158.gif)
 
+<br>
+ニッチな趣味を通した交流サイトを作りたいと思いました。私自身がスニーカーが好きでSNKRDUNKというアプリの利用者です。
+<br>
+このアプリは、
 
 
-<h2 align="center">DB設計</h2>
+## DB設計
 <!-- postは運営が出品していく形になっている -->
 ### postテーブル
 |Column|Type|Options|
