@@ -29,9 +29,12 @@ URL: https://snkrdunk.herokuapp.com/
 
 </p>
 
-# DB設計
+## このアプリの概要
+![SNKRDUNK](https://i.gyazo.com/73d89f225551654128e9fdba83c0a158.gif)
+
+## DB設計
 <!-- postは運営が出品していく形になっている -->
-## postテーブル
+### postテーブル
 |Column|Type|Options|
 |------|----|-------|
 |title|string|null: false|
@@ -43,7 +46,7 @@ URL: https://snkrdunk.herokuapp.com/
 - has_many :comments dependent: :destroy
 - belongs_to :user
 
-## userテーブル
+### userテーブル
 |Column|Type|Options|
 |------|----|-------|
 |nickname|string|null: false|
@@ -51,19 +54,19 @@ URL: https://snkrdunk.herokuapp.com/
 |password|string|null: false|
 |introduction|text|
 |size|integer|
-### Association
+#### Association
 - has_many :comments dependent: :destroy
 - has_many :posts
 <!-- - has_many :likes dependent: :destroy -->
 
-## commentテーブル
+### commentテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text|null: false|
 |image|string|null: false|
 |post_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
-### Association
+#### Association
 - belongs_to :post
 - belongs_to :user
 
