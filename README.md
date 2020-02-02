@@ -2,16 +2,20 @@
 
 <b>目次</b>
 <br>
+・DB設計
+<br>
 ・アプリの概要
 <br>
 ・作ろうと思ったきっかけ
 <br>
 ・工夫した点
-
-
-
+<br>
+・今後追加する予定の機能
+<br>
+・感想・まとめ
+<br>
 URL: https://snkrdunk.herokuapp.com/
-<br><br>
+<br>
 (herokuでデプロイ)
 
 <p align="center">
