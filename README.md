@@ -1,18 +1,20 @@
 <h1 align="center">README (SNKRDAUNK)</h1>
 
-|目次|----|-------|
-|アプリ|----|-------|
-|------|----|-------|
-|------|----|-------|
-|------|----|-------|
+目次
+<br>
+・アプリの概要
+<br>
+・作ろうと思ったきっかけ
+<br>
+・工夫した点
 
-<p align="center">
+
 
 URL: https://snkrdunk.herokuapp.com/
 <br><br>
 (herokuでデプロイ)
 
-
+<p align="center">
   <img width="600" alt="snkr1" src="https://user-images.githubusercontent.com/57933144/73604734-e1b1cd80-45d8-11ea-8b20-a413c5edb400.png">
 
 
