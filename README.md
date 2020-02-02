@@ -1,5 +1,16 @@
 # README
 
+<img width="300" alt="snkr1" src="https://user-images.githubusercontent.com/57933144/73604734-e1b1cd80-45d8-11ea-8b20-a413c5edb400.png">
+
+
+<img width="300" alt="snkr2" src="https://user-images.githubusercontent.com/57933144/73604736-e9717200-45d8-11ea-9b0f-1aea65a0535d.png">
+
+
+<img width="300" alt="snkr3" src="https://user-images.githubusercontent.com/57933144/73604738-f1311680-45d8-11ea-8340-cfa3d39deeb4.png">
+
+
+
+
 # DB設計
 <!-- postは運営が出品していく形になっている -->
 ## postテーブル
@@ -14,8 +25,6 @@
 - has_many :comments dependent: :destroy
 - belongs_to :user
 
-
-
 ## userテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -29,9 +38,6 @@
 - has_many :posts
 <!-- - has_many :likes dependent: :destroy -->
 
-
-
-
 ## commentテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -43,6 +49,7 @@
 - belongs_to :post
 - belongs_to :user
 
-
-
 <!-- likeテーブルとネストcommentテーブルができそうなら追加する！ -->
+
+
+
