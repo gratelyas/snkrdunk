@@ -1,14 +1,14 @@
-<h1 align="center">README (SNKRDAUNK)</h1>
+<h1 align="center">README (SNKRDUNK)</h1>
 
 <b>目次</b>
 <br><br>
-・アプリの概要
+・アプリの説明、使い方
 <br>
 ・DB設計
 <br>
 ・作ろうと思ったきっかけ
 <br>
-・工夫した点
+・苦労、工夫した点
 <br>
 ・今後追加する予定の機能
 <br>
@@ -29,10 +29,16 @@ URL: https://snkrdunk.herokuapp.com/
 
 </p>
 
-## このアプリの概要
+<h2 align="center">このアプリの説明・使い方</h2>
 ![SNKRDUNK](https://i.gyazo.com/73d89f225551654128e9fdba83c0a158.gif)
 
-## DB設計
+<br>
+ニッチな趣味を通した交流サイトを作りたいと思いました。私自身がスニーカーが好きでSNKRDUNKというアプリの利用者です。
+<br>
+このアプリは、
+
+
+<h2 align="center">DB設計</h2>
 <!-- postは運営が出品していく形になっている -->
 ### postテーブル
 |Column|Type|Options|
