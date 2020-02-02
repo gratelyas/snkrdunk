@@ -1,4 +1,7 @@
-# README
+# README (SNKRDAUNK)
+
+URL: https://snkrdunk.herokuapp.com/
+(herokuでデプロイ)
 
 <img width="600" alt="snkr1" src="https://user-images.githubusercontent.com/57933144/73604734-e1b1cd80-45d8-11ea-8b20-a413c5edb400.png">
 
