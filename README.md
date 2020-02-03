@@ -15,7 +15,7 @@
 URL: https://snkrdunk.herokuapp.com/
 <br>
 (herokuでデプロイ)
-<br>
+<br><br>
 adminユーザー・・・管理者
 <br>
 name : test
