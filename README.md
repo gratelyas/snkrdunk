@@ -15,6 +15,15 @@
 URL: https://snkrdunk.herokuapp.com/
 <br>
 (herokuでデプロイ)
+<br>
+adminユーザー・・・管理者
+<br>
+name : test
+<br>
+email : snkr@dunk
+<br>
+password : 111111
+
 
 <p align="center">
   <img width="600" alt="snkr1" src="https://user-images.githubusercontent.com/57933144/73604734-e1b1cd80-45d8-11ea-8b20-a413c5edb400.png">
