@@ -41,7 +41,7 @@
         .content-wrap
           = @post.content
 
-      .comment-wrap
+      .comment-wrap                 
         %h2.comment-title
           コメント・レビュー
         .post-list-colum
@@ -58,6 +58,7 @@
                           = form.file_field :image
                   .mt-10
                     = form.submit "投稿する", class: :comment_btn
+                  
                     
 
           .post-list
