@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
   def create
-    Comment.create(comment_params)
+    @comment = Comment.create(comment_params)
     @posts = Post.all
     @posts.first(1).each do |post|
     redirect_to post_path(post.id)

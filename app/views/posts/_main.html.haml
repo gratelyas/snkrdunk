@@ -20,7 +20,7 @@
       .post-list-wrapper
         %h2.title 新着スニーカー・記事  
         .post-squares
-          - @posts.each do |post|
+          - @posts.first(9).each do |post|
             .post-list
               = link_to image_tag(post.image.to_s), post_path(post.id)
               %h3.post-title
