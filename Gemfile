@@ -68,6 +68,7 @@ gem 'sprockets', '3.7.2'
 
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog-aws'
 
 gem 'cloudinary'
 
